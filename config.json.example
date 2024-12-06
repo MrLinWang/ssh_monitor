@@ -1,12 +1,21 @@
 {
+    "global": {
+        "username": "your_username",
+        "password": "your_password",
+        "key_filename": "your_key_path",
+        "port": 22,
+        "timeout": 5
+    },
     "servers": [
         {
-            "name": "your_server_name",
-            "hostname": "your_server_ip",
-            "username": "your_username",
-            "password": "your_password",
-            "key_filename": "your_key_path",
-            "port": 22
+            "name": "server1",
+            "hostname": "your_server_ip"
         },
+        {
+            "name": "server2",
+            "hostname": "your_server_ip",
+            "port": 2222,
+            "timeout": 10  # 可以覆盖全局超时设置
+        }
     ]
 }
